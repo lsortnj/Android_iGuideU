@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/create_guide_scroll_guide_session"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/create_guide_radio_group_guide_type"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/create_guide_layout_guide_sessions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/partial_guide_session" />
+
+            <Button
+                android:id="@+id/create_guide_btn_add_session"
+                style="@style/base_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/base_button"
+                android:text="@string/create_guide_btn_add_session" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/create_guide_txt_guide_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/create_guide_guide_type"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/create_guide_radio_group_guide_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_guide_txt_guide_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+        <RadioButton
+            android:id="@+id/create_guide_radio_type_all_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/create_guide_guide_type_all_day" />
+
+        <RadioButton
+            android:id="@+id/create_guide_radio_type_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/create_guide_type_session" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/create_guide_layout_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_guide_radio_group_guide_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+        <TextView
+            android:id="@+id/create_guide_label_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/create_guide_duration"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/create_guide_layout_duration_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_guide_label_duration"
+            android:layout_marginTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/create_guide_btn_duration_hour_minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/create_guide_txt_duration_hour"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/create_guide_label_hour"
+                style="@style/guider_intro"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/hour"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/create_guide_btn_duration_hour_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/create_guide_layout_duration_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_guide_layout_duration_hour"
+            android:layout_marginTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/create_guide_btn_duration_min_minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/create_guide_txt_duration_min"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/create_guide_label_min"
+                style="@style/guider_intro"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/minutes"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/create_guide_btn_duration_min_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

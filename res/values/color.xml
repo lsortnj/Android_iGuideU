@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#4B4654</color>
+    <color name="main_text">#FEFEFE</color>
+    <color name="dark_text">#333333</color>
+    <color name="hint_text">#AAAAB0</color>
+    <color name="actionbar_text">#FFFFFF</color>
+    <color name="actionbar_bg">#384262</color>
+    <color name="actionbar_stacked_bg">#89D0D0</color>
+    <color name="side_menu_role">#857465</color>
+    <color name="panel_bg">#FFFFFE</color>
+    <color name="white_text">#FFFFFE</color>
+</resources>

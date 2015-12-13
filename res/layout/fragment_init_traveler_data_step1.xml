@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/init_traveler_layout_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/init_treveler_label_realname"
+        android:layout_marginTop="5dp" >
+
+        <RadioGroup
+            android:id="@+id/init_traveler_radio_group_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <RadioButton
+                android:id="@+id/init_traveler_radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/init_traveler_radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/init_traveler_edit_realname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/init_traveler_radio_group_gender"
+            android:hint="@string/hint_real_name"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/init_treveler_label_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/init_traveler_layout_realname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/init_treveler_label_phone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:id="@+id/init_traveler_layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/init_treveler_label_phone_number"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/init_treveler_img_phone1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/init_treveler_edit_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/init_treveler_img_phone1"
+            android:layout_centerVertical="false"
+            android:layout_toRightOf="@+id/init_treveler_img_phone1"
+            android:ems="10"
+            android:hint="@string/hint_phone_number"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="15"
+            android:maxLines="1" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/init_treveler_edit_phone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/init_treveler_img_phonn2"
+            android:layout_alignLeft="@+id/init_treveler_edit_phone1"
+            android:layout_below="@+id/init_treveler_edit_phone1"
+            android:ems="10"
+            android:hint="@string/hint_phone_number_optional"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/init_treveler_edit_phone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/init_treveler_img_phone3"
+            android:layout_alignLeft="@+id/init_treveler_edit_phone2"
+            android:layout_below="@+id/init_treveler_edit_phone2"
+            android:ems="10"
+            android:hint="@string/hint_phone_number_optional"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/init_treveler_img_phonn2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/init_treveler_img_phone1"
+            android:layout_toLeftOf="@+id/init_treveler_edit_phone2"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/init_treveler_img_phone3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@id/init_treveler_img_phonn2"
+            android:layout_toLeftOf="@id/init_treveler_edit_phone3"
+            android:src="@drawable/phone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/init_treveler_img_contact_info"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/init_guide_contact_info" />
+
+    <TextView
+        android:id="@+id/init_treveler_label_realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/init_treveler_img_contact_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="@string/init_treveler_realname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/card_bg_guide"
+    android:paddingBottom="6dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="4dp" >
+
+    <ImageView
+        android:id="@+id/card_my_guide_img_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/card_my_guide_layout_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/card_my_guide_img_cover"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/card_my_guide_txt_name"
+            style="@style/card_guide_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/card_my_guide_img_fee"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:text="@string/guide_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/card_my_guide_txt_location"
+            style="@style/card_guide_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/card_my_guide_txt_name"
+            android:layout_toLeftOf="@+id/card_my_guide_img_fee"
+            android:ellipsize="marquee"
+            android:freezesText="false"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:text="@string/location"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/card_my_guide_txt_join_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/card_my_guide_img_join_count"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/card_my_guide_txt_join_count"
+            android:src="@drawable/my_guide_join_people" />
+
+        <TextView
+            android:id="@+id/card_my_guide_txt_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="38dp"
+            android:layout_toLeftOf="@id/card_my_guide_txt_join_count"
+            android:text="@string/free"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/card_my_guide_img_fee"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/card_my_guide_txt_fee"
+            android:src="@drawable/my_guide_dollar" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/card_my_guide_txt_highlight_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/card_my_guide_img_cover"
+        android:layout_alignRight="@+id/card_my_guide_img_cover"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+</RelativeLayout>

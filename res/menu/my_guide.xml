@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mo.iguideu.IGuideUActiviry" >
+
+    <item
+        android:id="@+id/btn_add"
+        android:title="@string/btn_add"
+        android:icon="@drawable/btn_add"
+        app:showAsAction="withText|ifRoom"/>
+
+</menu>

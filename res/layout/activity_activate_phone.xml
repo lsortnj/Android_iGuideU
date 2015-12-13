@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/activate_phone_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/activate_phone_layout_step1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/activate_phone_step1_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/title_activate_phone_step1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/activate_phone_step1_img_phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/activate_phone_step1_edit_country_code"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activate_phone_step1_img_phone"
+                android:ems="10"
+                android:enabled="false"
+                android:text="+886" />
+
+            <EditText
+                android:id="@+id/activate_phone_step1_edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activate_phone_step1_edit_country_code"
+                android:ems="10"
+                android:hint="@string/hint_phone_number"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="15"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/activate_phone_step1_btn_send"
+                style="@style/base_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="72dp"
+                android:background="@drawable/base_button"
+                android:text="@string/init_guide_data_btn_continue" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

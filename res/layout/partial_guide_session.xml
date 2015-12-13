@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/partial_guide_session_layout_choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/option_pane_padding" >
+
+        <TextView
+            android:id="@+id/guide_session_txt_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".08"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/guide_session_edit_time_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hint_guide_session_start"
+            android:inputType="date" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/guide_sesstion_txt_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/to"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/guide_session_edit_time_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hint_guide_session_end"
+            android:inputType="date" />
+
+        <ImageButton
+            android:id="@+id/guide_session_btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".15"
+            android:scaleType="centerInside"
+            android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+</RelativeLayout>

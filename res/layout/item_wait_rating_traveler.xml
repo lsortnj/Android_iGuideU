@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/normal_click" >
+
+    <CheckBox
+        android:id="@+id/list_item_rating_traveler_checkbox"
+        style="@style/CheckBox.Iguideu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true" />
+
+    <mo.iguideu.ui.base.CircleImageView
+        android:id="@+id/list_item_rating_traveler_img_profile_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@id/list_item_rating_traveler_checkbox"
+        android:src="@drawable/default_user_icon" />
+
+    <TextView
+        android:id="@+id/list_item_rating_traveler_txt_traveler_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/list_item_rating_traveler_img_profile_img"
+        android:text="Traveler Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/list_item_rating_traveler_txt_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_item_rating_traveler_img_profile_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="Taiwan"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

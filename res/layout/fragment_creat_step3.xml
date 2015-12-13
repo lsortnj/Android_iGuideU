@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/create_guide_step3_img_schedule"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/create_guide_schedule" />
+
+    <TextView
+        android:id="@+id/create_guide_step3_txt_add_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/create_guide_step3_img_schedule"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/create_guide_step3_img_schedule"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/add_aganda"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/create_guide_step3_edit_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/create_guide_step3_txt_add_schedule"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hint_sample_schedule"
+        android:inputType="textMultiLine"
+        android:minLines="15" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_txt_nearby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:gravity="bottom"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mo.iguideu.TravelNowActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+        
+       <com.costum.android.widget.PullAndLoadListView
+           android:id="@+id/load_more_listview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:dividerHeight="10dp" />
+       
+     </RelativeLayout>
+
+</RelativeLayout>

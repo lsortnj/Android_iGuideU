@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/fragment_init_guide_data_lang_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/init_guide_language" />
+
+    <TextView
+        android:id="@+id/fragment_init_guide_data_lang_txt_choose_tans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_init_guide_data_lang_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/choose_language_you_provide"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/fragment_init_guide_data_lang_chk_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_init_guide_data_spinner_more_lang"
+        android:layout_below="@+id/fragment_init_guide_data_lang_txt_choose_tans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/fragment_init_guide_data_lang_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/fragment_init_guide_data_lang_scroll_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:tag="zh_TW" >
+
+                    <ImageView
+                        android:id="@+id/item_chk_lang_img_flag_tw"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/lang_chk_tw"
+                        android:src="@drawable/tw" />
+
+                    <CheckBox
+                        android:id="@+id/lang_chk_tw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="false" />
+
+                    <TextView
+                        android:id="@+id/item_chk_lang_txt_country_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/item_chk_lang_img_flag_tw"
+                        android:layout_alignTop="@id/item_chk_lang_img_flag_tw"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/item_chk_lang_img_flag_tw"
+                        android:gravity="center_vertical"
+                        android:text="@string/lang_zh_tw"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:tag="en_US" >
+
+                    <ImageView
+                        android:id="@+id/item_chk_lang_img_flag_en"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/item_chk_lang_checkbox_en"
+                        android:src="@drawable/us" />
+
+                    <CheckBox
+                        android:id="@+id/item_chk_lang_checkbox_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="false" />
+
+                    <TextView
+                        android:id="@+id/partial_guide_info_txt_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/item_chk_lang_img_flag_en"
+                        android:layout_alignTop="@+id/item_chk_lang_img_flag_en"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/item_chk_lang_img_flag_en"
+                        android:gravity="center_vertical"
+                        android:text="@string/lang_us"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:tag="ja_JP" >
+
+                    <ImageView
+                        android:id="@+id/item_chk_lang_img_flag_jp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/item_chk_lang_checkbox_jp"
+                        android:src="@drawable/jp" />
+
+                    <CheckBox
+                        android:id="@+id/item_chk_lang_checkbox_jp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="false" />
+
+                    <TextView
+                        android:id="@+id/partial_guide_info_label_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/item_chk_lang_img_flag_jp"
+                        android:layout_alignTop="@+id/item_chk_lang_img_flag_jp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/item_chk_lang_img_flag_jp"
+                        android:gravity="center_vertical"
+                        android:text="@string/lang_jp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/fragment_init_guide_data_spinner_more_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>

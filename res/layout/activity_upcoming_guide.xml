@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/activity_upcoming_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/hint_text" />
+
+    <ScrollView
+        android:id="@+id/activity_upcoming_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_upcoming_txt_title"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/activity_upcoming_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.wt.calendarcard.CalendarCardPager
+                android:id="@+id/activity_upcoming_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="370dp" >
+            </com.wt.calendarcard.CalendarCardPager>
+
+            <LinearLayout
+                android:id="@+id/activity_upcoming_event_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/activity_upcoming_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

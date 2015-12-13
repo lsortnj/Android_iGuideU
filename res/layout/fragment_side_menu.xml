@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/side_menu_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp" >
+
+                <mo.iguideu.ui.base.CircleImageView
+                    android:id="@+id/side_menu_img_profile_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/default_user_icon" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_user_show_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_profile_img"
+                    android:text="@string/side_menu_txt_user_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_role_traveler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/side_menu_txt_traveler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/traveler"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_popular"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/popular" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_popular"
+                    android:text="@string/popular"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_nearby_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_nearby_guide"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/menu_nearby" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_nearby_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_nearby_guide"
+                    android:text="@string/nearby"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_nice_guider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_nice_guider"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/menu_nice_guider" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_nice_guider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_nice_guider"
+                    android:text="@string/nice_guider"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_traveler_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_traveler_upcoming"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/my_join_guide" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_traveler_upcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_traveler_upcoming"
+                    android:text="@string/side_menu_traveler_upcoming"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_traveler_waiting_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_traveler_wating_rating"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/side_menu_rating" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_traveler_waiting_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_traveler_wating_rating"
+                    android:text="@string/side_menu_waiting_rating"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_traveler_rating_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/side_menu_txt_traveler_waiting_rating"
+                    android:background="@drawable/count_circle_bg"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_role_guider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/side_menu_txt_guider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/guider"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_my_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_my_guide"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/my_guide" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_my_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_my_guide"
+                    android:text="@string/side_menu_my_guide"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_guider_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_guider_upcoming"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/my_join_guide" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_guider_upcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_guider_upcoming"
+                    android:text="@string/side_menu_guider_upcoming"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_guider_waiting_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_guider_waiting_rate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/side_menu_rating" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_guider_waiting_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_guider_waiting_rate"
+                    android:text="@string/side_menu_wating_rating_traveler"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_guider_waiting_rate_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/side_menu_txt_guider_waiting_rate"
+                    android:background="@drawable/count_circle_bg"
+                    android:gravity="center"
+                    android:text="999"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_operation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/side_menu_txt_operation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/operation"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/side_menu_layout_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/side_menu_item_bg" >
+
+                <ImageView
+                    android:id="@+id/side_menu_img_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/side_menu_txt_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/side_menu_img_setting"
+                    android:text="@string/side_menu_setting"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/side_menu_btn_logout"
+                style="@style/base_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_button"
+                android:text="@string/logout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</LinearLayout>

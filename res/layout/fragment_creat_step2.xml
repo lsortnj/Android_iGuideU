@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/create_txt_step2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/create_guide_step2_img_date"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/create_guide_step2_img_date"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/create_guide_available_time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/create_spinner_available_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_txt_step2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/create_layout_choose_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_spinner_available_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/option_pane_padding" >
+
+        <TextView
+            android:id="@+id/create_txt_select_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_guide_choose_date"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/create_edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_txt_select_date"
+            android:ems="10"
+            android:inputType="date" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/create_layout_choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/create_layout_choose_date"
+        android:padding="@dimen/option_pane_padding" >
+
+        <TextView
+            android:id="@+id/create_txt_select_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_guide_choose_time"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/create_txt_time_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_txt_select_time"
+            android:text="@string/from"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/create_edit_time_from"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@dimen/activity_horizontal_margin"
+            android:layout_alignTop="@id/create_txt_time_from"
+            android:layout_below="@id/create_txt_select_time"
+            android:layout_toRightOf="@+id/create_txt_time_from"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/create_txt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignTop="@id/create_txt_time_from"
+            android:layout_toRightOf="@id/create_edit_time_from"
+            android:text="@string/to"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/create_edit_time_to"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/create_edit_time_from"
+            android:layout_below="@+id/create_txt_select_time"
+            android:layout_toRightOf="@+id/create_txt_to"
+            android:ems="10"
+            android:inputType="date" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/create_layout_choose_weekday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/create_spinner_available_type"
+        android:padding="@dimen/option_pane_padding" >
+
+        <TextView
+            android:id="@+id/create_txt_choose_weekday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_weekday"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/create_spinner_weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@id/create_txt_choose_weekday" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/create_layout_choose_month_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/create_spinner_available_type"
+        android:padding="@dimen/option_pane_padding" >
+
+        <TextView
+            android:id="@+id/create_txt_choose_month_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_month_day"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/create_spinner_month_day"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/create_txt_choose_month_day" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/create_guide_step2_img_date"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/create_guide_date" />
+
+</RelativeLayout>

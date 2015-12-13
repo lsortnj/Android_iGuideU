@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mo.iguideu.IGuideUActiviry" >
+    
+    <item 
+        android:id="@+id/next_step" 
+        android:title="@string/btn_next"
+        app:showAsAction="withText|ifRoom"></item>
+    
+
+</menu>

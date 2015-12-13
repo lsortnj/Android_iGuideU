@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/create_guide_step2_new_img_date"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/create_guide_date" />
+
+    <TextView
+        android:id="@+id/create_txt_step2_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/create_guide_step2_new_img_date"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/create_guide_step2_new_img_date"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/create_guide_available_time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <com.wt.calendarcard.CalendarCardPager
+        android:id="@+id/create_guide_step2_new_calendar_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_guide_step2_new_img_date" />
+
+</RelativeLayout>

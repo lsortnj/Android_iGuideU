@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/feagment_init_guide_date_img_license"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/init_guide_license" />
+
+    <TextView
+        android:id="@+id/fragment_init_guide_data_lang_txt_choose_tans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feagment_init_guide_date_img_license"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/got_license"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/fragment_init_guide_data_radio_group_got_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_init_guide_data_lang_txt_choose_tans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" >
+
+        <RadioButton
+            android:id="@+id/fragment_init_guide_data_radio_got_license_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no" />
+
+        <RadioButton
+            android:id="@+id/fragment_init_guide_data_radio_got_license_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fragment_init_guide_data_license_code_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_init_guide_data_radio_group_got_license"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/fragment_init_guide_data_edit_license_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/fragment_init_guide_data_license_code"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="25"
+            android:maxLines="1" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/fragment_init_guide_data_license_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fragment_init_guide_data_edit_license_no"
+            android:layout_alignParentTop="true"
+            android:text="@string/license_no"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

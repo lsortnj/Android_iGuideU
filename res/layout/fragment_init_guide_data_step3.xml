@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/fragment_init_guide_data_trans_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/init_guide_transportation" />
+
+    <TextView
+        android:id="@+id/fragment_init_guide_data_trans_txt_choose_tans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_init_guide_data_trans_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/choose_transpotation_type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/fragment_init_guide_data_trans_chk_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_init_guide_data_trans_txt_choose_tans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/fragment_init_guide_data_trans_scrollview"
+            android:layout_width="344dp"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/fragment_init_guide_data_trans_scroll_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="car" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_car"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_car"
+                            android:src="@drawable/trans_car" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="car" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_car"
+                            android:layout_alignTop="@+id/trans_img_car"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_car"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_car"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:tag="moto" >
+
+                        <ImageView
+                            android:id="@+id/tran_img_moto"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_moto"
+                            android:src="@drawable/trans_moto" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_moto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="moto" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_moto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tran_img_moto"
+                            android:layout_alignTop="@+id/tran_img_moto"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/tran_img_moto"
+                            android:gravity="center_vertical"
+                            android:text="@string/trnas_moto"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="bike" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_bike"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_bike"
+                            android:src="@drawable/trans_bike" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_bike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="bike" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_bike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_bike"
+                            android:layout_alignTop="@+id/trans_img_bike"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_bike"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_bike"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="bus" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_bus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_bus"
+                            android:src="@drawable/trans_bus" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_bus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="bus" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_bus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_bus"
+                            android:layout_alignTop="@+id/trans_img_bus"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_bus"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_bus"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="taxi" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_taxi"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_taxi"
+                            android:src="@drawable/trans_taxi" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_taxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="taxi" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_taxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_taxi"
+                            android:layout_alignTop="@+id/trans_img_taxi"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_taxi"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_taxi"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="train" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_train"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_train"
+                            android:src="@drawable/trans_train" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_train"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="train" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_train"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_train"
+                            android:layout_alignTop="@+id/trans_img_train"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_train"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_train"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="plane" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_plane"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_plane"
+                            android:src="@drawable/trans_plane" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_plane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="plane" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_plane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_plane"
+                            android:layout_alignTop="@id/trans_img_plane"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_plane"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_plane"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="boat" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_boat"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_boat"
+                            android:src="@drawable/trans_boat" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_boat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="boat" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_boat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_boat"
+                            android:layout_alignTop="@+id/trans_img_boat"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_boat"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_boat"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:tag="else" >
+
+                        <ImageView
+                            android:id="@+id/trans_img_else"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/trans_chk_else"
+                            android:src="@drawable/trans_else" />
+
+                        <CheckBox
+                            android:id="@+id/trans_chk_else"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false"
+                            android:tag="else" />
+
+                        <TextView
+                            android:id="@+id/trans_txt_else"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/trans_img_else"
+                            android:layout_alignTop="@+id/trans_img_else"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/trans_img_else"
+                            android:gravity="center_vertical"
+                            android:text="@string/trans_else"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

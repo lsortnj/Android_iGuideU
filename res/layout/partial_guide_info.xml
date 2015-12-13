@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/guide_info_txt_info_detail"
+        style="@style/guide_info_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/guide_info_detail_info"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/panel_shadow"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel_bg"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@color/panel_bg" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_date"
+                    style="@style/info_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:id="@+id/partial_guide_info_img_calendar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@id/partial_guide_info_label_date"
+                    android:src="@drawable/guide_detail_btn_calendar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@color/panel_bg" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_fee"
+                    style="@style/info_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/fee"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/partial_guide_info_txt_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/partial_guide_info_label_fee"
+                    android:layout_centerVertical="true"
+                    android:text="Free"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel_bg"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_people"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@color/panel_bg" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_people"
+                    style="@style/info_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/partial_guide_info_people"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/partial_guide_info_txt_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/partial_guide_info_label_people"
+                    android:text="3/5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@color/panel_bg" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_guide_type"
+                    style="@style/info_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/duration"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/partial_guide_info_txt_guide_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/partial_guide_info_label_guide_type"
+                    android:text="1 Hour 20 Min"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel_bg"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_trans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_transportation"
+                    style="@style/info_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/transportation_we_offer"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <HorizontalScrollView
+                    android:id="@+id/partial_guide_info_scroll_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/partial_guide_info_label_transportation"
+                    android:layout_centerVertical="false" >
+
+                    <LinearLayout
+                        android:id="@+id/partial_guide_info_layout_trans_scroll_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_lang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_language"
+                    style="@style/info_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/language"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <HorizontalScrollView
+                    android:id="@+id/partial_guide_info_scroll_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/partial_guide_info_label_language"
+                    android:layout_centerVertical="false" >
+
+                    <LinearLayout
+                        android:id="@+id/partial_guide_info_layout_lang_scroll_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/guide_info_txt_meet_location"
+        style="@style/guide_info_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/guide_detail_head_location"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:id="@+id/guide_info_layout_panel_shoadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/panel_shadow"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/guide_info_layout_panel_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/panel_bg" >
+
+            <RelativeLayout
+                android:id="@+id/guide_info_layout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/partial_guide_info_label_location"
+                    style="@style/info_title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/meet_location_map"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <ImageView
+                    android:id="@+id/activiry_guide_detail_img_static_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/partial_guide_info_label_location"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

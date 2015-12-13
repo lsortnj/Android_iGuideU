@@ -1,0 +1,167 @@
+<resources>
+
+    
+    
+    <style name="Theme.Iguideu" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_example</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Iguideu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Iguideu</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Iguideu</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Iguideu</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Iguideu</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_example</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_example</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Iguideu</item>
+        
+        
+    </style>
+
+    <style name="ActionBar.Solid.Iguideu" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_example</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_example</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_example</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Iguideu</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Iguideu" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_example</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Iguideu</item>
+    </style>
+
+    <style name="PopupMenu.Iguideu" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>	
+    </style>
+
+    <style name="DropDownListView.Iguideu" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_example</item>
+    </style>
+
+    <style name="CheckBox.Iguideu" parent="@android:style/Widget.CompoundButton.CheckBox">  
+	    <item name="android:button">@drawable/checkbox</item>  
+	</style> 
+    
+    <style name="ActionBarTabStyle.Iguideu" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+    </style>
+
+    <style name="DropDownNav.Iguideu" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_example</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_example</item>
+    </style>
+    
+    <style name="ProgressBar.Iguideu" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_example</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Iguideu" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_example</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Iguideu.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Iguideu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Iguideu</item>
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+    
+    
+    <!-- the theme applied to the application or activity -->
+    <style name="IGuideUTheme"
+           parent="@style/AppTheme">
+        <item name="android:actionBarStyle">@style/MoActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MoActionBar</item>
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="actionMenuTextColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="MoActionBar"
+           parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/actionbar_bg</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="background">@color/actionbar_bg</item>
+        <item name="backgroundStacked">@color/actionbar_stacked_bg</item>
+        <item name="backgroundSplit">@color/actionbar_bg</item>
+    </style>
+
+    <!-- action bar title text -->
+    <style name="TitleTextStyle"
+           parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- action bar tab text -->
+    <style name="TabTextStyle"
+           parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+    
+    <style name="base_button_text" >
+	    <item name="android:layout_width" >fill_parent</item>
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:textColor" >#ffffff</item>
+	    <item name="android:gravity" >center</item>
+	    <item name="android:layout_margin" >3dp</item>
+	    <item name="android:textSize" >15sp</item>
+	    <item name="android:textStyle" >bold</item>
+	    <item name="android:shadowColor" >#000000</item>
+	    <item name="android:shadowDx" >1</item>
+	    <item name="android:shadowDy" >1</item>
+	    <item name="android:shadowRadius" >2</item>
+	</style>
+	
+    <style name="title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="info_title_bar">
+        <item name="android:textColor">#868686</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="guide_info_head">
+        <item name="android:textColor">#3B1948</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle" >bold</item>
+    </style>
+    
+    <style name="card_guide_name">
+        <item name="android:textColor">#4C5A4F</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="card_guide_location">
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    <style name="guider_intro">
+        <item name="android:textColor">#4E5154</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/create_guide_step5_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/create_meet_location" />
+
+    <TextView
+        android:id="@+id/create_guide_step5_txt_choose_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/create_guide_step5_img"
+        android:layout_toRightOf="@+id/create_guide_step5_img"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/meet_location"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <fragment
+        android:id="@+id/create_guide_step5_map_view"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/create_guide_step5_layout_loc_name"
+        android:layout_marginTop="10dp" /> 
+
+    <RelativeLayout
+        android:id="@+id/create_guide_step5_layout_loc_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_guide_step5_img" >
+
+        <TextView
+            android:id="@+id/create_guide_step5_txt_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:text="@string/location_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <AutoCompleteTextView
+            android:id="@+id/create_guide_step5_edit_location_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/create_guide_step5_txt_location_name"
+            android:ems="10"
+            android:hint="@string/search_location"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:minLines="1" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
